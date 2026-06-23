@@ -1,1 +1,8 @@
-body{background:#FFF8FA}.card{border-color:#F5B7C8}
+
+body{background:#FFF8FA;color:#4A4A4A}
+.header,.footer,.sidebar{background:#fff}
+.header{border-bottom:1px solid #f0dce3}
+.footer{border-top:1px solid #f0dce3;margin-top:30px;padding:20px}
+.sidebar{min-height:70vh;padding:20px;border-right:1px solid #f0dce3}
+.card{border-color:#F5B7C8}
+.btn-pink{background:#E88DA8;color:white}

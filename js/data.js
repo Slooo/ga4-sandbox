@@ -1,17 +1,8 @@
 
-const CATEGORIES=[
-{name:'Джинсы',slug:'jeans'},
-{name:'Сарафаны',slug:'sundress'},
-{name:'Платья',slug:'dresses'},
-{name:'Юбки',slug:'skirts'},
-{name:'Топы и майки',slug:'tops'},
-{name:'Блузки',slug:'blouses'},
-{name:'Брюки',slug:'pants'},
-{name:'Нижнее белье',slug:'lingerie'}
-];
-const PRODUCTS=[
-{id:1,name:'Summer Dress',category:'dresses',price:39},
-{id:2,name:'Classic Jeans',category:'jeans',price:49},
-{id:3,name:'Pink Skirt',category:'skirts',price:29},
-{id:4,name:'White Top',category:'tops',price:19}
-];
+const CATEGORIES=['jeans','sundress','dresses','skirts','tops','blouses','pants','lingerie'];
+const PRODUCTS=Array.from({length:24},(_,i)=>({
+ id:i+1,
+ name:'Product '+(i+1),
+ category:CATEGORIES[i%8],
+ price:20+i
+}));

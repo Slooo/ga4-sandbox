@@ -4,7 +4,13 @@
 <div id="header"></div>
 <div class="container-fluid"><div class="row">
 <div id="sidebar" class="col-md-3"></div>
-<main class="col-md-9 p-4"><h1>Спасибо за заказ!</h1></main>
+<main class="col-md-9 p-4">
+<h1>Analytics Lab</h1>
+<button onclick="track('login')">Login</button>
+<button onclick="track('sign_up')">Signup</button>
+<button onclick="track('purchase',{value:100})">Purchase</button>
+<button onclick="track('search',{term:'dress'})">Search</button>
+</main>
 </div></div>
 <div id="footer"></div>
 <script src="js/analytics.js"></script>
