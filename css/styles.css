@@ -1,8 +1,111 @@
-
-body{background:#FFF8FA;color:#4A4A4A}
-.header,.footer,.sidebar{background:#fff}
-.header{border-bottom:1px solid #f0dce3}
-.footer{border-top:1px solid #f0dce3;margin-top:30px;padding:20px}
-.sidebar{min-height:70vh;padding:20px;border-right:1px solid #f0dce3}
-.card{border-color:#F5B7C8}
-.btn-pink{background:#E88DA8;color:white}
+:root {
+  --pink: #f8d7e5;
+  --pink-dark: #e9a9c3;
+  --accent: #d63384;
+  --bg: #fff8fb;
+  --border: #f0d9e5;
+}
+body {
+  background: var(--bg);
+  color: #333;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.header,
+.footer {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+.footer {
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.sidebar {
+  background: #fff;
+  min-height: calc(100vh - 70px);
+  border-right: 1px solid var(--border);
+  padding: 1rem;
+}
+.hero {
+  background: linear-gradient(135deg, #fde8f1, #fff);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.category-link {
+  display: block;
+  color: #444;
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  margin-bottom: 0.25rem;
+  transition: 0.2s;
+}
+.category-link:hover,
+.category-link.active {
+  background: var(--pink);
+  color: #000;
+}
+.product-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.2s;
+  background: #fff;
+}
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+}
+.product-image {
+  background: #fde8f1;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.price {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.btn-pink {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-pink:hover {
+  background: #b6256c;
+  color: #fff;
+}
+.badge-sale {
+  background: #ff4d6d;
+}
+.search-box {
+  max-width: 420px;
+}
+.debug-panel {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 320px;
+  max-height: 350px;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  display: none;
+  z-index: 9999;
+}
+.debug-panel.show {
+  display: none;
+}
